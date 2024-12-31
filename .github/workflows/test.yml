@@ -23,3 +23,11 @@ jobs:
           echo "First execution of multiple things.."
           echo "Second execution of multiple things."
           echo "Third execution of multiple things."
+name: second workflow
+on: workflow_execute
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second workflow step
+        run: echo "execute second workflow in CMD."
