@@ -1,8 +1,20 @@
-name: action workflow
-on: action_workflow_dispatch
+name: test workflow #name of the workflow
+on: push #trigger the workflow giving some command based on docs.
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
+  test: 
+    runs_on: ubuntu-latest #based on which server (means OS platform).
     steps:
-      - name: Print greeting
-        run: echo "Hello world! execute action workflow first job first step!!!!!!!!!!!................"
+      - name: first step execute
+        run: |
+          echo "This is multi line run execution"
+          echo "This is multi line run execution"
+      - name: get code from checkout application.
+        uses: actions/checkout@v4 
+      - name: Install node js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies npm ci
+        run: npm ci #execute install dependencies.
+      - name: run tests
+        run: npm test
