@@ -8,7 +8,6 @@ jobs:
         run: echo "Hello World!" #It execute in CMD.
       - name: code execution of first step
         run: echo "This is learning github actions."
-        jobs:
   second-job: #first name of job
     runs-on: ubuntu-latest #based on which server it executes.
     steps:
