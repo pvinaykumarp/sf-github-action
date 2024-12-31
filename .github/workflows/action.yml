@@ -1,5 +1,5 @@
 name: workflow1 #this is name of workflow
-on: workflow_execute #when this workflow should be executed.
+on: workflow-execute #when this workflow should be executed.
 jobs:
   first-job:  #This is name of jobs.
     runs-on: ubuntu-latest #based on which server it executes the job.
