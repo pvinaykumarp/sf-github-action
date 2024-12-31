@@ -4,8 +4,17 @@ jobs:
   first-job: #first name of job
     runs-on: ubuntu-latest #based on which server it executes.
     steps: 
-      - name: Print greeting #name of the step.
+      - name: greeting of first step #name of the step.
         run: echo "Hello World!" #It execute in CMD.
+      - name: code execution of first step
+        run: echo "This is learning github actions."
+        jobs:
+  second-job: #first name of job
+    runs-on: ubuntu-latest #based on which server it executes.
+    steps:
+      - name: second job first step
+        run: echo "This is second job first step execution in CMD."
       - name: Print goodbye
         run: echo "Done - bye!"
+
 
