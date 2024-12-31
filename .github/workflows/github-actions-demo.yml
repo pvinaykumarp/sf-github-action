@@ -15,5 +15,11 @@ jobs:
         run: echo "This is second job first step execution in CMD."
       - name: Print goodbye
         run: echo "Done - bye!"
-
-
+  third-job: #name of job
+    runs-on: ubuntu-latest #based on which server it executes.
+    steps:
+      - name: Third job step execute. #name of step.
+        run: |
+          echo "First execution of multiple things.."
+          echo "Second execution of multiple things."
+          echo "Third execution of multiple things."
