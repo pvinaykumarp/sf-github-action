@@ -1,0 +1,11 @@
+name: First Workflow #This is name of workflow
+on: workflow_dispatch #workflow execute 
+jobs: 
+  first-job: #first name of job
+    runs-on: ubuntu-latest #based on which server it executes.
+    steps: 
+      - name: Print greeting #name of the step.
+        run: echo "Hello World!" #It execute in CMD.
+      - name: Print goodbye
+        run: echo "Done - bye!"
+
