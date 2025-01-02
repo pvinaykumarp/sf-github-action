@@ -1,5 +1,5 @@
 name: table_wf
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 jobs:
   emp_job:
     runs-on: ubuntu-latest
