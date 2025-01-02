@@ -1,4 +1,4 @@
-name: table_wf
+name: index_wf
 on: [workflow_dispatch]
 jobs:
   emp_job:
