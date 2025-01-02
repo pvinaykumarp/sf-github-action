@@ -2,6 +2,7 @@ name: table_wf
 on: [push, workflow_dispatch]
 jobs:
   emp_job:
-    - name: execute table name
-      run: |
-        echo "execute sql queries."
+    steps:
+      - name: execute table name
+        run: |
+          echo "execute sql queries."
