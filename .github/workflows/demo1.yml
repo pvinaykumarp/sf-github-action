@@ -1,6 +1,7 @@
-name: Events Demo 1
 on: 
-  push
+  - push
+  - workflow_dispatch
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 jobs:
   deploy:
     runs-on: ubuntu-latest

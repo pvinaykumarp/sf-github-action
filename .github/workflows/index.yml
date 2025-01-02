@@ -1,0 +1,9 @@
+name: index_wf
+on: [workflow_dispatch]
+jobs:
+  emp_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execute table name
+        run: |
+          echo "execute sql queries."
